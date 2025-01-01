@@ -37,7 +37,7 @@ module.exports = defineConfig({
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'on',
-    headless: false,  // Enable headed mode by setting this to false
+    headless: true,  // Enable headed mode by setting this to false
 
   },
 
