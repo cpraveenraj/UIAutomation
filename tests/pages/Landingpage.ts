@@ -8,7 +8,9 @@ export class Landingpage {
    };
 
   async acceptCookies() {
-      await this.page.getByTestId('uc-accept-all-button').click();
+      if(await this.page.getByTestId('uc-accept-all-button').isVisible()){
+         await this.page.getByTestId('uc-accept-all-button').click();
+      }
    };
 
   async navigateToProducts() {
